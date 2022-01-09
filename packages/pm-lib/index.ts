@@ -1,6 +1,6 @@
-// import { TekLogin } from 'pm-lib-common';
-// import { TekLibAuth, TekLibLocalStorage, TekLibMessageServices } from 'pm-lib-core';
-// import TekLibComponents from 'pm-lib-vue';
+import { PmTitle } from 'pm-lib-common';
+import { PmUtil } from 'pm-lib-core';
+import PmComponents from 'pm-lib-vue';
 
-// export { TekLogin, TekLibAuth, TekLibLocalStorage, TekLibMessageServices };
-// export default TekLibComponents;
+export { PmTitle, PmUtil };
+export default PmComponents;
