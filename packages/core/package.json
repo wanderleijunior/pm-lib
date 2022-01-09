@@ -1,6 +1,6 @@
 {
 	"name": "pm-lib-core",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A pm-lib-core component using Zeedhi Next",
 	"publishConfig": {
 		"access": "public"
