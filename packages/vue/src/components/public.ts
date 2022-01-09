@@ -1,5 +1,5 @@
-import TekLogin from './tek-login/TekLogin';
+import PmTitle from './pm-title/PmTitle';
 
 export {
-	TekLogin,
+	PmTitle,
 };

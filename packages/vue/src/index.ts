@@ -1,7 +1,7 @@
 import { PluginFunction, VueConstructor } from 'vue';
 import { components } from './components';
 
-const TekLibComponents: { install: PluginFunction<any> } = {
+const PmComponents: { install: PluginFunction<any> } = {
 	install(Vue: VueConstructor): void {
 		Object.keys(components)
 			.forEach((id) => {
@@ -10,5 +10,5 @@ const TekLibComponents: { install: PluginFunction<any> } = {
 	},
 };
 
-export default TekLibComponents;
+export default PmComponents;
 export * from './components/public';
