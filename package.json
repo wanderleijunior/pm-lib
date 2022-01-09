@@ -17,7 +17,6 @@
 		"build-core": "rm -rf packages/core/dist packages/core/types && lerna run build --scope 'pm-lib-core'",
 		"build-vue": "rm -rf packages/vue/dist packages/vue/types && lerna run build --scope 'pm-lib-vue'"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^17.0.0",
 		"@types/jest": "^27.0.1",
