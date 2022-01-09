@@ -1,6 +1,6 @@
 {
   "name": "pm-lib-vue",
-  "version": "0.0.0",
+  "version": null,
   "description": "A pm-lib-vue component using Zeedhi",
   "publishConfig": {
     "access": "public"
@@ -14,8 +14,8 @@
     "watch": "rollup -cw"
   },
   "peerDependencies": {
-    "pm-lib-common": "file:packages/common",
     "@zeedhi/vuetify": "*",
+    "pm-lib-common": "file:packages/common",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2"
