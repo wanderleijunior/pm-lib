@@ -1,0 +1,21 @@
+{
+	"name": "pm-lib-common",
+	"version": "0",
+	"description": "A Pm-lib-common component using Zeedhi Next",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "dist/pm-lib-common.umd.js",
+	"module": "dist/pm-lib-common.esm.js",
+	"typings": "types/index.d.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"lint": "eslint . --fix --ext .ts",
+		"test": "jest",
+		"watch": "npm run build -- -w"
+	},
+	"peerDependencies": {
+		"@zeedhi/common": "*",
+		"@zeedhi/core": "*"
+	}
+}

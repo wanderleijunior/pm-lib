@@ -1,0 +1,21 @@
+{
+	"name": "pm-lib-core",
+	"version": "2.0.1",
+	"description": "A pm-lib-core component using Zeedhi Next",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "dist/pm-lib-core.umd.js",
+	"module": "dist/pm-lib-core.esm.js",
+	"typings": "types/index.d.ts",
+	"scripts": {
+		"build": "rollup -c",
+		"lint": "eslint . --fix --ext .ts",
+		"test": "jest",
+		"watch": "npm run build -- -w"
+	},
+	"peerDependencies": {
+		"@zeedhi/common": "*",
+		"@zeedhi/core": "*"
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"name": "pm-lib",
+	"version": "0.0.0",
+	"description": "",
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "lerna run build",
+		"init": "lerna bootstrap",
+		"lint": "lerna run lint",
+		"test": "lerna run test",
+		"watch": "lerna run --parallel --no-bail watch",
+		"publish": "lerna publish",
+		"build-full": "npm run build-common && npm run build-core && npm run build-vue",
+		"build-common": "rm -rf packages/common/dist packages/common/types && lerna run build --scope '@zeedhi/pm-lib-common'",
+		"build-core": "rm -rf packages/core/dist packages/core/types && lerna run build --scope '@zeedhi/pm-lib-core'",
+		"build-vue": "rm -rf packages/vue/dist packages/vue/types && lerna run build --scope '@zeedhi/pm-lib-vue'"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^17.0.0",
+		"@types/jest": "^27.0.1",
+		"@typescript-eslint/eslint-plugin": "^4.12.0",
+		"@typescript-eslint/parser": "^4.12.0",
+		"@zeedhi/common": "*",
+		"@zeedhi/core": "*",
+		"@zeedhi/vuetify": "*",
+		"eslint": "^7.17.0",
+		"eslint-config-airbnb-typescript": "^12.0.0",
+		"eslint-plugin-import": "2.22.1",
+		"jest": "^27.2.1",
+		"lerna": "^3.22.1",
+		"@zeedhi/pm-lib-common": "file:packages/common",
+		"rollup": "^2.36.1",
+		"rollup-plugin-scss": "^2.6.1",
+		"rollup-plugin-typescript2": "^0.29.0",
+		"rollup-plugin-vue": "^5.1.9",
+		"ts-jest": "^27.0.5",
+		"typescript": "^4.4.4",
+		"vue": "^2.6.12",
+		"vue-class-component": "^7.2.6",
+		"vue-property-decorator": "^9.1.2",
+		"vue-template-compiler": "^2.6.12"
+	}
+}

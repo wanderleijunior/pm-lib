@@ -1,0 +1,23 @@
+{
+  "name": "pm-lib-vue",
+  "version": "2.0.1",
+  "description": "A pm-lib-vue component using Zeedhi",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/pm-lib-vue.umd.js",
+  "module": "dist/pm-lib-vue.esm.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint . --ext .ts --fix",
+    "watch": "rollup -cw"
+  },
+  "peerDependencies": {
+    "@zeedhi/pm-lib-common": "file:packages/common",
+    "@zeedhi/vuetify": "*",
+    "vue": "^2.6.12",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2"
+  }
+}
