@@ -1,14 +1,14 @@
 {
   "name": "pm-lib",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Pm-Lib libraries using Zeedhi next",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "pm-lib-common": "^0.0.5",
-    "pm-lib-core": "^0.0.5",
-    "pm-lib-vue": "^0.0.5"
+    "pm-lib-common": "^0.0.6",
+    "pm-lib-core": "^0.0.6",
+    "pm-lib-vue": "^0.0.6"
   },
   "gitHead": "58c68a104be4b1939502fdab14668c6cca199e52"
 }
