@@ -1,5 +1,5 @@
 import { Component, Prop } from 'vue-property-decorator';
-import { PmTitle as PmTitleClass } from 'pm-lib-common';
+import { PmTitle as PmTitleClass } from '@zeedhi/pm-lib-common';
 import { ZdComponentRender } from '@zeedhi/vuetify';
 
 /**

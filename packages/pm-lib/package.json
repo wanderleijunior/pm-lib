@@ -8,7 +8,7 @@
   "dependencies": {
     "@zeedhi/pm-lib-common": "^0.0.9",
     "@zeedhi/pm-lib-core": "^0.0.9",
-    "@zeedhi/pm-lib-vue": "^0.0.7"
+    "@zeedhi/pm-lib-vue": "^0.0.9"
   },
   "gitHead": "0825ebb621591f5550a7f85ecf1c375a436ddbcd"
 }
