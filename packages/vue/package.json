@@ -15,7 +15,7 @@
   },
   "peerDependencies": {
     "@zeedhi/vuetify": "*",
-    "pm-lib-common": "file:packages/common",
+    "@zeedhi/pm-lib-common": "file:packages/common",
     "vue": "^2.6.12",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2"

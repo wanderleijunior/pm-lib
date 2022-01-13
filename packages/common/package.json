@@ -1,5 +1,5 @@
 {
-	"name": "pm-lib-common",
+	"name": "@zeedhi/pm-lib-common",
 	"version": "0.0.7",
 	"description": "A Pm-lib-common component using Zeedhi Next",
 	"publishConfig": {

@@ -1,5 +1,5 @@
 {
-	"name": "pm-lib-core",
+	"name": "@zeedhi/pm-lib-core",
 	"version": "0.0.7",
 	"description": "A pm-lib-core component using Zeedhi Next",
 	"publishConfig": {
