@@ -25,6 +25,7 @@
 		"@zeedhi/common": "*",
 		"@zeedhi/core": "*",
 		"@zeedhi/vuetify": "*",
+		"@zeedhi/teknisa-components-common": "*",
 		"eslint": "^7.17.0",
 		"eslint-config-airbnb-typescript": "^12.0.0",
 		"eslint-plugin-import": "2.22.1",
