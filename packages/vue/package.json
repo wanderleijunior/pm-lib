@@ -1,5 +1,5 @@
 {
-  "name": "pm-lib-vue",
+  "name": "@zeedhi/pm-lib-vue",
   "version": "0.0.8",
   "description": "A pm-lib-vue component using Zeedhi",
   "publishConfig": {
@@ -20,5 +20,5 @@
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2"
   },
-  "gitHead": "58c68a104be4b1939502fdab14668c6cca199e52"
+  "gitHead": "0825ebb621591f5550a7f85ecf1c375a436ddbcd"
 }
