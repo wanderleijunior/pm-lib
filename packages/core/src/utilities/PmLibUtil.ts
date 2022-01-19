@@ -1,7 +1,7 @@
 import { Http } from '@zeedhi/core';
 import { LoadingService } from '@zeedhi/common';
 
-export class PmUtil {
+export class PmLibUtil {
 	public static isProduct(): boolean {
 		return window.parent === window;
 	}

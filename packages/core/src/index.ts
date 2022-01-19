@@ -1,8 +1,8 @@
-import { PmUtil } from './utilities/PmUtil';
-import { PmInstance } from './services/PmInstance';
-import { PmValidations } from './services/PmValidations';
-import { PmAlertService } from './services/PmAlertService';
-import { PmDialogService } from './services/PmDialogService';
-import { PmHttp } from './services/PmHttp';
+import { PmLibUtil } from './utilities/PmLibUtil';
+import { PmLibInstance } from './services/PmLibInstance';
+import { PmLibValidations } from './services/PmLibValidations';
+import { PmLibAlertService } from './services/PmLibAlertService';
+import { PmLibDialogService } from './services/PmLibDialogService';
+import { PmLibHttp } from './services/PmLibHttp';
 
-export { PmUtil, PmInstance, PmValidations, PmDialogService, PmHttp, PmAlertService };
+export { PmLibUtil, PmLibInstance, PmLibValidations, PmLibAlertService, PmLibDialogService, PmLibHttp };

@@ -1,10 +1,10 @@
 import { DialogService } from '@zeedhi/common';
-import { PmUtil } from '../utilities/PmUtil';
+import { PmLibUtil } from '../utilities/PmLibUtil';
 
-export class PmDialogService extends DialogService {
+export class PmLibDialogService extends DialogService {
 	public static showSuccess(text: string) {
 		this.show({
-			name: PmUtil.getNameDynamic('success_dialog'),
+			name: PmLibUtil.getNameDynamic('success_dialog'),
 			type: 'success',
 			title: 'Sucesso',
 			text,
@@ -13,7 +13,7 @@ export class PmDialogService extends DialogService {
 
 	public static showError(text: string) {
 		this.show({
-			name: PmUtil.getNameDynamic('error_dialog'),
+			name: PmLibUtil.getNameDynamic('error_dialog'),
 			type: 'error',
 			title: 'Erro',
 			text,
@@ -38,13 +38,13 @@ export class PmDialogService extends DialogService {
 	public static async confirmDialog(msg: string, type: string = 'warning') {
 		return new Promise((resolve) => {
 			this.show({
-				name: PmUtil.getNameDynamic('confirmDialog'),
+				name: PmLibUtil.getNameDynamic('confirmDialog'),
 				type,
 				title: 'Confirmação',
 				text: msg,
 				buttons: [
 					{
-						name: PmUtil.getNameDynamic('no'),
+						name: PmLibUtil.getNameDynamic('no'),
 						component: 'ZdButton',
 						label: 'Não',
 						outline: true,
@@ -56,7 +56,7 @@ export class PmDialogService extends DialogService {
 						},
 					},
 					{
-						name: PmUtil.getNameDynamic('yes'),
+						name: PmLibUtil.getNameDynamic('yes'),
 						component: 'ZdButton',
 						label: 'Sim',
 						events: {

@@ -1,10 +1,10 @@
 import { AlertService } from '@zeedhi/common';
-import { PmUtil } from '../utilities/PmUtil';
+import { PmLibUtil } from '../utilities/PmLibUtil';
 
-export class PmAlertService extends AlertService {
+export class PmLibAlertService extends AlertService {
 	public static showSuccess(msg: string) {
 		this.show({
-			name: PmUtil.getNameDynamic('success_alert'),
+			name: PmLibUtil.getNameDynamic('success_alert'),
 			color: 'success',
 			text: msg,
 			timeout: 3000,
@@ -16,7 +16,7 @@ export class PmAlertService extends AlertService {
 
 	public static showError(msg: string) {
 		this.show({
-			name: PmUtil.getNameDynamic('success_alert'),
+			name: PmLibUtil.getNameDynamic('success_alert'),
 			color: 'error',
 			text: msg,
 			timeout: 3000,

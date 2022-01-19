@@ -1,6 +1,22 @@
-import { PmTitle } from 'pm-lib-common';
-import { PmUtil } from 'pm-lib-core';
-import PmComponents from 'pm-lib-vue';
+import { PmTitle, PmFormSave } from '@zeedhi/pm-lib-common';
+import {
+	PmLibUtil,
+	PmLibAlertService,
+	PmLibDialogService,
+	PmLibHttp,
+	PmLibInstance,
+	PmLibValidations
+} from '@zeedhi/pm-lib-core';
+import PmLibComponents from '@zeedhi/pm-lib-vue';
 
-export { PmTitle, PmUtil };
-export default PmComponents;
+export {
+	PmTitle,
+	PmFormSave,
+	PmLibUtil,
+	PmLibAlertService,
+	PmLibDialogService,
+	PmLibHttp,
+	PmLibInstance,
+	PmLibValidations
+};
+export default PmLibComponents;

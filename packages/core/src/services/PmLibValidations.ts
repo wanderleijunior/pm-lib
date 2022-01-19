@@ -1,4 +1,4 @@
-export class PmValidations {
+export class PmLibValidations {
 	public static validateCpf(cpf: string) {
 		if (cpf === undefined || cpf === null) {
 			return false;

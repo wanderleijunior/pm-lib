@@ -2,7 +2,7 @@ import { Metadata } from '@zeedhi/core';
 import { TekGrid } from '@zeedhi/teknisa-components-common';
 import { Form, Select, SelectMultiple, Tabs, TextInput } from '@zeedhi/common';
 
-export class PmInstance {
+export class PmLibInstance {
 	public static getInstanceTekGrid(name: string): TekGrid {
 		return Metadata.getInstance<TekGrid>(name);
 	}

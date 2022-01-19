@@ -1,8 +1,8 @@
 import { Http } from '@zeedhi/core';
 import { LoadingService } from '@zeedhi/common';
-import { PmDialogService } from './PmDialogService';
+import { PmLibDialogService } from './PmLibDialogService';
 
-export class PmHttp extends Http {
+export class PmLibHttp extends Http {
 	public static async $get(url: string) {
 		try {
 			LoadingService.show();
@@ -11,7 +11,7 @@ export class PmHttp extends Http {
 			return response;
 		} catch (e) {
 			LoadingService.hide();
-			PmDialogService.showErrorBackend(e);
+			PmLibDialogService.showErrorBackend(e);
 			throw new Error('');
 		}
 	}
@@ -23,7 +23,7 @@ export class PmHttp extends Http {
 			LoadingService.hide();
 		} catch (e) {
 			LoadingService.hide();
-			PmDialogService.showErrorBackend(e);
+			PmLibDialogService.showErrorBackend(e);
 			throw new Error('');
 		}
 	}
@@ -36,7 +36,7 @@ export class PmHttp extends Http {
 			return true;
 		} catch (e) {
 			LoadingService.hide();
-			PmDialogService.showErrorBackend(e);
+			PmLibDialogService.showErrorBackend(e);
 			throw new Error('');
 		}
 	}
@@ -48,7 +48,7 @@ export class PmHttp extends Http {
 			LoadingService.hide();
 		} catch (e) {
 			LoadingService.hide();
-			PmDialogService.showErrorBackend(e);
+			PmLibDialogService.showErrorBackend(e);
 			throw new Error('');
 		}
 	}
