@@ -1,7 +1,7 @@
 import { PluginFunction, VueConstructor } from 'vue';
 import { components } from './components';
 
-const PmComponents: { install: PluginFunction<any> } = {
+const PmLibComponents: { install: PluginFunction<any> } = {
 	install(Vue: VueConstructor): void {
 		Object.keys(components)
 			.forEach((id) => {
@@ -10,5 +10,5 @@ const PmComponents: { install: PluginFunction<any> } = {
 	},
 };
 
-export default PmComponents;
+export default PmLibComponents;
 export * from './components/public';
