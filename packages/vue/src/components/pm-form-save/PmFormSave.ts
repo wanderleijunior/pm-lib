@@ -17,15 +17,17 @@ export default class PmFormSave extends ZdForm {
 
 	public instanceType: typeof PmFormSaveClass = PmFormSaveClass;
 
-	private get heightCalcStyle() {
+	public get heightCalcStyle() {
 		if (this.pixelsCalcStyle) {
 			return this.heightCalcStyleApplication;
 		}
 		return this.heightCalcStyleNone;
 	}
 
-	private heightCalcStyleApplication = {
-		height: `calc(100vh - ${this.pixelsCalcStyle}px)`,
+	private get heightCalcStyleApplication() {
+		return {
+			height: `calc(100vh - ${this.pixelsCalcStyle}px)`
+		}
 	};
 
 	private heightCalcStyleNone = {};
