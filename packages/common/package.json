@@ -1,6 +1,6 @@
 {
 	"name": "@zeedhi/pm-lib-common",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "A Pm-lib-common component using Zeedhi Next",
 	"publishConfig": {
 		"access": "public"
