@@ -1,4 +1,4 @@
-import { PmTitle, PmFormSave } from '@zeedhi/pm-lib-common';
+import { PmFormSave } from '@zeedhi/pm-lib-common';
 import {
 	PmLibUtil,
 	PmLibAlertService,
@@ -11,7 +11,6 @@ import {
 import PmLibComponents from '@zeedhi/pm-lib-vue';
 
 export {
-	PmTitle,
 	PmFormSave,
 	PmLibUtil,
 	PmLibAlertService,
