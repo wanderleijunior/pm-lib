@@ -8,7 +8,7 @@
 		></zd-divider>
 
 		<zd-form
-			:style="heightCalcStyle"
+			:style="styleHeightCalc"
 			:name="`${instance.name}PmFormSave`"
 			:instance-object="instance"
 		></zd-form>

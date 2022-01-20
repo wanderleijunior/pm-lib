@@ -7,7 +7,7 @@ import { PmFormSave as PmFormSaveClass, IHeader, IFooter } from '@zeedhi/pm-lib-
  */
 @Component
 export default class PmFormSave extends ZdForm {
-	@Prop({ type: [String, Number], default: undefined }) public pixelsCalcStyle: string | number | undefined;
+	@Prop({ type: [String, Number], default: undefined }) public styleHeightCalc: string | number | undefined;
 
 	@Prop({ type: Object }) public headerProps!: IHeader;
 
@@ -18,7 +18,7 @@ export default class PmFormSave extends ZdForm {
 	public instanceType: typeof PmFormSaveClass = PmFormSaveClass;
 
 	public get heightCalcStyle() {
-		if (this.pixelsCalcStyle) {
+		if (this.styleHeightCalc) {
 			return this.heightCalcStyleApplication;
 		}
 		return this.heightCalcStyleNone;
@@ -26,7 +26,7 @@ export default class PmFormSave extends ZdForm {
 
 	private get heightCalcStyleApplication() {
 		return {
-			height: `calc(100vh - ${this.pixelsCalcStyle}px)`
+			height: `calc(100vh - ${this.styleHeightCalc}px)`
 		}
 	};
 

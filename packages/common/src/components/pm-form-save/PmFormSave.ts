@@ -6,8 +6,8 @@ export class PmFormSave extends Form implements IPmFormSave {
 	/* Form name */
 	public name!: string;
 
-	/* PmFormSave: pixelsCalcStyle */
-	public pixelsCalcStyle = undefined;
+	/* PmFormSave: styleHeightCalc */
+	public styleHeightCalc = undefined;
 
 	/* PmFormSave: HeaderProps */
 	public headerProps: IHeader = {};
@@ -89,7 +89,7 @@ export class PmFormSave extends Form implements IPmFormSave {
 				outline: true,
 				isVisible: true,
 				events: {
-					click: this.cancelClick.bind(this),
+					click: this.cancelButtonClick.bind(this),
 				},
 			},
 			{
@@ -98,7 +98,7 @@ export class PmFormSave extends Form implements IPmFormSave {
 				label: 'Salvar',
 				isVisible: true,
 				events: {
-					click: this.saveClick.bind(this),
+					click: this.saveButtonClick.bind(this),
 				},
 			},
 		],
@@ -112,7 +112,7 @@ export class PmFormSave extends Form implements IPmFormSave {
 		super(props);
 
 		this.name = this.getInitValue('name', props.name, this.name);
-		this.pixelsCalcStyle = this.getInitValue('pixelsCalcStyle', props.pixelsCalcStyle, this.pixelsCalcStyle);
+		this.styleHeightCalc = this.getInitValue('styleHeightCalc', props.styleHeightCalc, this.styleHeightCalc);
 		this.headerProps = this.getInitValue('headerProps', props.headerProps, this.headerProps);
 		this.footerProps = this.getInitValue('footerProps', props.footerProps, this.footerProps);
 
@@ -283,15 +283,15 @@ export class PmFormSave extends Form implements IPmFormSave {
 		}
 	}
 
-	private cancelClick({ event, element }: IEventParam<PmFormSave>) {
-		if (this.events.cancelClick) {
-			this.events.cancelClick({ event, element, component: this });
+	private cancelButtonClick({ event, element }: IEventParam<PmFormSave>) {
+		if (this.events.cancelButtonClick) {
+			this.events.cancelButtonClick({ event, element, component: this });
 		}
 	}
 
-	private saveClick({ event, element }: IEventParam<PmFormSave>) {
-		if (this.validate() && this.events.saveClick) {
-			this.events.saveClick({ event, element, component: this });
+	private saveButtonClick({ event, element }: IEventParam<PmFormSave>) {
+		if (this.validate() && this.events.saveButtonClick) {
+			this.events.saveButtonClick({ event, element, component: this });
 		}
 	}
 
