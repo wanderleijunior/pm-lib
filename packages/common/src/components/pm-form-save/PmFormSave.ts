@@ -17,7 +17,7 @@ export class PmFormSave extends Form implements IPmFormSave {
 		isVisible: true,
 		title: '',
 		closeButton: {
-			isVisible: false,
+			isVisible: true,
 			disabled: false,
 		},
 	};
