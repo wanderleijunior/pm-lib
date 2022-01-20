@@ -28,7 +28,7 @@ export class PmLibDialogService extends DialogService {
 			msg = 'Ocorreu um erro inesperado. Contate um administrador';
 		}
 		this.show({
-			name: 'error_dialog',
+			name: PmLibUtil.getNameDynamic('error_dialog'),
 			type: 'error',
 			title: 'Erro',
 			text: msg,

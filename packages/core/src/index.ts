@@ -4,5 +4,14 @@ import { PmLibValidations } from './services/PmLibValidations';
 import { PmLibAlertService } from './services/PmLibAlertService';
 import { PmLibDialogService } from './services/PmLibDialogService';
 import { PmLibHttp } from './services/PmLibHttp';
+import { PmLibCrud } from './services/PmLibCrud';
 
-export { PmLibUtil, PmLibInstance, PmLibValidations, PmLibAlertService, PmLibDialogService, PmLibHttp };
+export {
+	PmLibUtil,
+	PmLibInstance,
+	PmLibValidations,
+	PmLibAlertService,
+	PmLibDialogService,
+	PmLibHttp,
+	PmLibCrud,
+};

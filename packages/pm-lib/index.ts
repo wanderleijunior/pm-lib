@@ -5,7 +5,8 @@ import {
 	PmLibDialogService,
 	PmLibHttp,
 	PmLibInstance,
-	PmLibValidations
+	PmLibValidations,
+	PmLibCrud,
 } from '@zeedhi/pm-lib-core';
 import PmLibComponents from '@zeedhi/pm-lib-vue';
 
@@ -17,6 +18,7 @@ export {
 	PmLibDialogService,
 	PmLibHttp,
 	PmLibInstance,
-	PmLibValidations
+	PmLibValidations,
+	PmLibCrud
 };
 export default PmLibComponents;
