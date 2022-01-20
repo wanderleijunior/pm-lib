@@ -1,6 +1,8 @@
+import PmLibComponents from '@zeedhi/pm-lib-vue';
 import { PmFormSave } from '@zeedhi/pm-lib-common';
 import {
 	PmLibUtil,
+	PmLibUtilController,
 	PmLibAlertService,
 	PmLibDialogService,
 	PmLibHttp,
@@ -8,11 +10,11 @@ import {
 	PmLibValidations,
 	PmLibCrud,
 } from '@zeedhi/pm-lib-core';
-import PmLibComponents from '@zeedhi/pm-lib-vue';
 
 export {
 	PmFormSave,
 	PmLibUtil,
+	PmLibUtilController,
 	PmLibAlertService,
 	PmLibDialogService,
 	PmLibHttp,
@@ -20,4 +22,5 @@ export {
 	PmLibValidations,
 	PmLibCrud
 };
+
 export default PmLibComponents;
