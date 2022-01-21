@@ -1,3 +1,3 @@
 # Pm-Lib
 
-### [Link da documentação](https://wanderleijunior.github.io/docs-tek-lib/)
+### [Link da documentação](https://wanderleijunior.github.io/doc-pm-lib/)
