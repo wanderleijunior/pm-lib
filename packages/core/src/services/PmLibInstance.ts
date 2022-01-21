@@ -15,15 +15,15 @@ export class PmLibInstance {
 		return Metadata.getInstance<TextInput>(name);
 	}
 
-	public static getInstanceZdSelectInput(name: string): Select {
+	public static getInstanceZdSelect(name: string): Select {
 		return Metadata.getInstance<Select>(name);
 	}
 
-	public static getInstanceZdSelectMultipleInput(name: string): SelectMultiple {
+	public static getInstanceZdSelectMultiple(name: string): SelectMultiple {
 		return Metadata.getInstance<SelectMultiple>(name);
 	}
 
-	public static getInstanceZdTabsMultipleInput(name: string): Tabs {
+	public static getInstanceZdTabs(name: string): Tabs {
 		return Metadata.getInstance<Tabs>(name);
 	}
 }
