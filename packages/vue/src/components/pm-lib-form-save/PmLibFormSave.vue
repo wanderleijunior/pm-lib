@@ -17,7 +17,7 @@
 	</span>
 </template>
 
-<script lang="ts" src="./PmFormSave.ts">
+<script lang="ts" src="./PmLibFormSave.ts">
 
 </script>
 

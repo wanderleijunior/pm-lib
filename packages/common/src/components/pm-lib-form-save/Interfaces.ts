@@ -1,7 +1,7 @@
 import { IForm, IFormEvents, IFormEvent } from '@zeedhi/common';
 import { IDictionary, IEvent } from '@zeedhi/core';
 
-export interface IPmFormSaveEvents extends IFormEvents {
+export interface IPmLibFormSaveEvents extends IFormEvents {
 	cancelButtonClick?: IEvent<IFormEvent>;
 	saveButtonClick?: IEvent<IFormEvent>;
 	closeButtonClick?: IEvent<IFormEvent>;
@@ -39,9 +39,9 @@ export interface IFooter extends ISlot {
 	saveButton?: ISaveButton;
 }
 
-export interface IPmFormSave extends IForm {
+export interface IPmLibFormSave extends IForm {
 	styleHeightCalc?: string | number;
 	headerProps: IHeader;
 	footerProps: IFooter;
-	events?: IPmFormSaveEvents;
+	events?: IPmLibFormSaveEvents;
 }

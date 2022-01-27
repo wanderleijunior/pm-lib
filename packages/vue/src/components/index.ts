@@ -1,8 +1,10 @@
 import { VueConstructor } from 'vue';
 import { IDictionary } from '@zeedhi/core';
 
-import PmFormSave from './pm-form-save/PmFormSave.vue';
+import PmLibFormSave from './pm-lib-form-save/PmLibFormSave.vue';
+import PmLibDetailHeader from './pm-lib-detail-header/PmLibDetailHeader.vue';
 
 export const components: IDictionary<VueConstructor> = {
-	PmFormSave,
+	PmLibFormSave,
+	PmLibDetailHeader,
 };

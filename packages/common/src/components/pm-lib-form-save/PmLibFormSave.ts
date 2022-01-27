@@ -1,8 +1,8 @@
 import { Form } from '@zeedhi/common';
 import { IDictionary, IEventParam } from '@zeedhi/core';
-import { IFooter, IHeader, IPmFormSave, IPmFormSaveEvents } from './Interfaces';
+import { IFooter, IHeader, IPmLibFormSave, IPmLibFormSaveEvents } from './Interfaces';
 
-export class PmFormSave extends Form implements IPmFormSave {
+export class PmLibFormSave extends Form implements IPmLibFormSave {
 	/* Form name */
 	public name!: string;
 
@@ -39,7 +39,7 @@ export class PmFormSave extends Form implements IPmFormSave {
 	};
 
 	/* Form events */
-	public events!: IPmFormSaveEvents;
+	public events!: IPmLibFormSaveEvents;
 
 	public header: any = {
 		name: `${this.name}PmFormSaveHeader`,
@@ -108,7 +108,7 @@ export class PmFormSave extends Form implements IPmFormSave {
 	 * Form Save constructor
 	 * @param props Form Save properties
 	 */
-	constructor(props: IPmFormSave) {
+	constructor(props: IPmLibFormSave) {
 		super(props);
 
 		this.name = this.getInitValue('name', props.name, this.name);
@@ -277,19 +277,19 @@ export class PmFormSave extends Form implements IPmFormSave {
 	 ******** Methods Events  *********
 	 ******************************** */
 
-	private closeButtonClick({ event, element }: IEventParam<PmFormSave>) {
+	private closeButtonClick({ event, element }: IEventParam<PmLibFormSave>) {
 		if (this.events.closeButtonClick) {
 			this.events.closeButtonClick({ event, element, component: this });
 		}
 	}
 
-	private cancelButtonClick({ event, element }: IEventParam<PmFormSave>) {
+	private cancelButtonClick({ event, element }: IEventParam<PmLibFormSave>) {
 		if (this.events.cancelButtonClick) {
 			this.events.cancelButtonClick({ event, element, component: this });
 		}
 	}
 
-	private saveButtonClick({ event, element }: IEventParam<PmFormSave>) {
+	private saveButtonClick({ event, element }: IEventParam<PmLibFormSave>) {
 		if (this.validate() && this.events.saveButtonClick) {
 			this.events.saveButtonClick({ event, element, component: this });
 		}

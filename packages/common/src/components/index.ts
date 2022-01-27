@@ -1,3 +1,7 @@
 // PmFormSave
-export * from './pm-form-save/PmFormSave';
-export * from './pm-form-save/Interfaces';
+export * from './pm-lib-form-save/PmLibFormSave';
+export * from './pm-lib-form-save/Interfaces';
+
+// PmLibDetailHeader
+export * from './pm-lib-detail-header/PmLibDetailHeader';
+export * from './pm-lib-detail-header/Interfaces';
