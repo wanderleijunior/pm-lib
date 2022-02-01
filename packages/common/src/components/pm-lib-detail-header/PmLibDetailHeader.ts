@@ -2,9 +2,9 @@ import { ComponentRender } from '@zeedhi/common';
 import { IEventParam } from '@zeedhi/core';
 import { IPmLibDetailHeader, IPmLibDetailHeaderEvents } from './Interfaces';
 
-export class PmLibDetailHeader extends ComponentRender implements IPmLibDetailHeader{
+export class PmLibDetailHeader extends ComponentRender implements IPmLibDetailHeader {
 	/* Header name */
-	public name!: string;
+	// public name!: string;
 
 	/* Header title */
 	public title!: string
@@ -12,48 +12,48 @@ export class PmLibDetailHeader extends ComponentRender implements IPmLibDetailHe
 	/* Form events */
 	public events!: IPmLibDetailHeaderEvents;
 
-	public header: any = {
-		name: `${this.name}PmLibDetailHeader`,
-		component: 'ZdHeader',
-		color: 'white',
-		padless: true,
-		elevation: 0,
-		leftSlot: [
-			{
-				name: `${this.name}PmLibDetailHeaderButtonBack`,
-				component: 'ZdButton',
-				icon: true,
-				small: true,
-				iconName: 'mdi-arrow-left',
-				events: {
-					click: this.backButtonClick.bind(this),
-				},
-			},
-			{
-				name: `${this.name}PmLibDetailHeaderTitle`,
-				component: 'ZdText',
-				tag: 'h3',
-				text: '{{AclLabelsController.currentProjectName}}'
-			}
-		],
-	};
+	public header: any = {};
 
 	constructor(props: IPmLibDetailHeader) {
 		super(props);
 
-		this.name = this.getInitValue('name', props.name, this.name);
+		// this.name = this.getInitValue('name', props.name, this.name);
 		this.title = this.getInitValue('title', props.title, this.title);
 
+		this.setHeader();
+
 		this.createAccessors();
-
-		this.setTitle();
 	}
 
-	public setTitle() {
-		this.header.leftSlot[1].text = this.title;
+	public setHeader() {
+		this.header = {
+			name: `${this.name}PmLibDetailHeader`,
+			component: 'ZdHeader',
+			color: 'white',
+			padless: true,
+			elevation: 0,
+			leftSlot: [
+				{
+					name: `${this.name}PmLibDetailHeaderButtonBack`,
+					component: 'ZdButton',
+					icon: true,
+					small: true,
+					iconName: 'mdi-arrow-left',
+					events: {
+						click: this.backButtonClick.bind(this),
+					},
+				},
+				{
+					name: `${this.name}PmLibDetailHeaderTitle`,
+					component: 'ZdText',
+					tag: 'h3',
+					text: this.title
+				}
+			],
+		};
 	}
 
-	private backButtonClick({ event, element }: IEventParam<PmLibDetailHeader>) {
+	public backButtonClick({ event, element }: IEventParam<PmLibDetailHeader>) {
 		if (this.events.backButtonClick) {
 			this.events.backButtonClick({ event, element, component: this });
 		}

@@ -5,6 +5,6 @@ export interface IPmLibDetailHeaderEvents extends IComponentEvents {
 }
 
 export interface IPmLibDetailHeader extends IComponentRender {
-	title?: string | undefined;
+	title?: object | string | string[];
 	events?: IPmLibDetailHeaderEvents;
 }
