@@ -1,6 +1,6 @@
 {
   "name": "@zeedhi/pm-lib",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A Pm-Lib libraries using Zeedhi next",
   "publishConfig": {
     "access": "public"
