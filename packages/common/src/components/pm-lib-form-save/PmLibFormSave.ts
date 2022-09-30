@@ -2,6 +2,7 @@ import { Form } from '@zeedhi/common';
 import { IDictionary, IEventParam } from '@zeedhi/core';
 import { IFooter, IHeader, IPmLibFormSave, IPmLibFormSaveEvents } from './Interfaces';
 
+const MODULES_THEME_COLOR = localStorage.getItem('MODULES_THEME_COLOR');
 export class PmLibFormSave extends Form implements IPmLibFormSave {
 	/* Form name */
 	public name!: string;
@@ -53,6 +54,7 @@ export class PmLibFormSave extends Form implements IPmLibFormSave {
 				name: `${this.name}PmFormSaveHeaderTitle`,
 				component: 'ZdText',
 				isVisible: true,
+				cssStyle: `color: ${MODULES_THEME_COLOR}`,
 				tag: 'h3',
 				text: '',
 			},

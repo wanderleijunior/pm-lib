@@ -6,9 +6,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@zeedhi/pm-lib-common": "^0.2.1",
-    "@zeedhi/pm-lib-core": "^0.2.0",
-    "@zeedhi/pm-lib-vue": "^0.2.1"
+    "@zeedhi/pm-lib-common": "file:../common",
+    "@zeedhi/pm-lib-core": "file:../core",
+    "@zeedhi/pm-lib-vue": "file:../vue"
   },
   "gitHead": "a7b3a3506647b74248a3f3b9e59347494571ada2"
 }

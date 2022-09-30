@@ -1,5 +1,5 @@
 import PmLibComponents from '@zeedhi/pm-lib-vue';
-import { PmLibFormSave, PmLibDetailHeader } from '@zeedhi/pm-lib-common';
+import { PmLibFormSave, PmLibDetailHeader, PmLibAlert } from '@zeedhi/pm-lib-common';
 import {
 	PmLibUtil,
 	PmLibAlertService,
@@ -13,6 +13,7 @@ import {
 export {
 	PmLibFormSave,
 	PmLibDetailHeader,
+	PmLibAlert,
 	PmLibUtil,
 	PmLibAlertService,
 	PmLibDialogService,

@@ -48,6 +48,12 @@ export class PmLibDetailHeader extends ComponentRender implements IPmLibDetailHe
 					component: 'ZdText',
 					tag: 'h3',
 					text: this.title
+				},
+				{
+					name: `testePmLibDetailHeaderTitle`,
+					component: 'ZdText',
+					tag: 'h3',
+					text: 'Teste'
 				}
 			],
 		};
@@ -58,5 +64,4 @@ export class PmLibDetailHeader extends ComponentRender implements IPmLibDetailHe
 			this.events.backButtonClick({ event, element, component: this });
 		}
 	}
-
 }
