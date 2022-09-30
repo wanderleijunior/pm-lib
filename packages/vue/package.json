@@ -1,6 +1,6 @@
 {
   "name": "@zeedhi/pm-lib-vue",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A pm-lib-vue component using Zeedhi",
   "publishConfig": {
     "access": "public"
